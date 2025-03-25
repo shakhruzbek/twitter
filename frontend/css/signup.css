@@ -90,9 +90,9 @@ button{
     border-radius: 35px;
     background-color: #1DA1F2;
 }
-.sign-box input{
+.signup-box input{
     width: 75%;
-    padding: 12px;
+    padding: 14px;
     border: 1px solid #ccc;
     border-radius: 50px;
     font-size: 13px;
@@ -100,3 +100,8 @@ button{
     transition: 0.3s;
     margin: 10px;
 }
+.sign-box .signupbox{
+    padding: 12px;
+    background-color: #fff;
+}
+

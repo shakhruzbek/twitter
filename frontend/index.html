@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script src="./js/login.js" defer></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </head>
 
@@ -19,17 +25,17 @@
         <div class="main-container">
             <h3 class="title">Happening now</h3>
             <h1 class="jointo">Join today.</h1>
-            <div class="box">
-                <div class="form-group">
+            <div class="box" style="display: block;">
+                <div class="login-box">
                     <input type="email" id="username" placeholder="username">
-                  
+
                 </div>
-                <div class="form-group">
+                <div class="login-box">
                     <input type="password" id="password" placeholder="password">
-                    
+
                 </div>
-                <button class="login">Login</button>
-                <p>Don't have an account? <a href="./pages/signup.html">Register now</a></p>
+                <button id="login-btn" class="login-btn">Login</button>
+                <p>Don't have an account? <a href="/frontend/html/signup.html">Register now</a></p>
             </div>
         </div>
     </main>
