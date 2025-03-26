@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
 body{
     background-color: black;
 }
 
 .sidebar-item{
-  padding: 12px;
-  border-right: 1px solid #2f3336;
-  width: 200px;
-  /* justify-content: center; */
+  padding: 10px 40px;
 }
 #sidebar{
+    width: 281px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    margin-left: 50px;
-}
-.sidebar-item:nth-child(1){
-    font-size: 50px;
+    height: 100vh;
+    /* background-color: yellow; */
+    padding-top: 5px;
+    border-right: 1px solid #2f3336;
+    position: relative;
+
 }
 .sidebar-item > i, span{
     font-size: 20px;
@@ -26,6 +29,66 @@ body{
     padding: 5px;
  
 }
-.sidebar-item span{
-       font-family: 'Roboto';
+
+.post-btn {
+    background-color: #ffffff; /* Asosiy fon rangi */
+    color: black; /* Matn rangi */
+    border: none;
+    padding: 20px 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px; /* X.com uslubidagi dumaloq shakl */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+}
+
+.post-btn:hover {
+    background-color: #d2d5d8; /* Hover foni */
+    /* transform: scale(1.05); */
+}
+
+.post-btn:active {
+    background-color: #2D4356; /* Bosilganda o‘zgarish */
+    transform: scale(0.95);
+}
+.user{
+    /* background: #fff; */
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    position: absolute;
+    bottom: 12px;
+    color: #fff;
+    align-items: center;
+    left: 20px;
+}
+
+.user h1{
+    font-size: 25px;
+}
+.content{
+    /* background-color: red; */
+    display: flex;
+}
+.orta{
+    height: 50px;
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    color: #fff;
+}
+.orta button{
+    border-radius: 15px;
+    padding: 8px 20px ;
+    border: #ffffff;
+}
+.avatar{
+    position: absolute;
+    
 }

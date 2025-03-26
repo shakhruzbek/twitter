@@ -1,7 +1,6 @@
 
 const express = require("express");
 const { user, login, signUp } = require("../controllers/userControllers");
-// const { login, signUp, user } = require("../controllers/userController");
 const userRouter = express.Router()
 
 userRouter.get('/:id', user)

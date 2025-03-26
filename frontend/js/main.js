@@ -8,7 +8,7 @@ const sidebarItems = [
     { icon: "fa-solid fa-envelope", title: "Messages" },
     { icon: "fa-solid fa-globe", title: "Grok" },
     { icon: "fa-solid fa-user", title: "Profile" },
-    { icon: "fa-solid fa-ellipsis", title: "More" },
+    { icon: "fa-solid fa-circle-info", title: "More" },
 ];
 
 sidebar.innerHTML = sidebarItems
@@ -16,8 +16,9 @@ sidebar.innerHTML = sidebarItems
         (item) => `
         <div class="sidebar-item">
             <i class="${item.icon}"></i>
-            <span>${item.title}</span>
+            <span>${item.title}</span> 
         </div>
+        
     `
     )
     .join(""); 

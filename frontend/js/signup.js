@@ -5,9 +5,12 @@ function signUp() {
   
     axios
       .post("http://localhost:4005/user/signUp", {
+
         firstname: firstname.value,
         username: username.value,
+        
         password: password.value,
+
       })
       .then((res) => {
         console.log(res);
